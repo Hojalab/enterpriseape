@@ -1,18 +1,5 @@
-<h1>Welcome#index</h1>
+<h1>JamiiStac</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
 <li>jamiistack new app version</li>
-<div id="display_box">
-  <div id="projects-empty-nd" style="<%= @no_projects ? 'display:block' : 'display:none'%>">
-    <div class="message"><p><%= t('projects.no_projects') %></p></div>
-  </div>
-  <%= render :partial => 'project_state_group', :object => @active_projects, :locals => { :state => 'active'} %>
-  <%= render :partial => 'project_state_group', :object => @hidden_projects, :locals => { :state => 'hidden'} %>
-  <%= render :partial => 'project_state_group', :object => @completed_projects, :locals => { :state => 'completed', :total_count => @completed_count} %>
-</div>
 
-<div id="input_box">
-  <div id="project_new_project_filler">
-    <%= render :partial => 'new_project_form' %>
-  </div>
-</div>
 
